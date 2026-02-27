@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Theme */
+.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.light {
+  background: #f4f7fa;
+  color: black;
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Floating Blobs */
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #00c6ff;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+  top: -100px;
+  left: -100px;
+}
+
+.blob2 {
+  background: #00ffcc;
+  top: 300px;
+  right: -100px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links button {
+  margin-left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: inherit;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.hero h1 {
+  font-size: 45px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00ffcc, #00c6ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Generator */
+.generator {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px 100px;
+}
+
+textarea {
+  width: 60%;
+  height: 120px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+}
+
+.generator button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.output {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Animation */
+.fade-in {
+  animation: fade 1.5s ease-in;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
